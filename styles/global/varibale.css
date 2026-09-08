@@ -1,0 +1,17 @@
+:root {
+  /* fonts */
+  --inter-font: "Inter", sans-serif;
+
+  /* colors */
+  --bg: #1a1530;
+  --bg-deep: #120e24;
+  --panel: #241c40;
+  --rock: #ff6a4d;
+  --paper: #2fd6c8;
+  --scissors: #ffce54;
+  --win: #4ee08a;
+  --lose: #ff5c7a;
+  --draw: #9d94c9;
+  --text: #f3f1fa;
+  --text-dim: #a79fcf;
+}

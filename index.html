@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock-Scissors-Paper</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/pages/index.css" />
+  </head>
+  <body>
+    
+    <div class="arena">
+      <header class="scoreboard">
+        <div class="score-side">
+          <span class="score-label">Sən</span>
+          <span class="score-value" id="playerScore">0</span>
+        </div>
+        <div class="score-mid">
+          <span class="round-count" id="roundCount">Round 0</span>
+        </div>
+        <div class="score-side">
+          <span class="score-label">Komputer</span>
+          <span class="score-value" id="computerScore">0</span>
+        </div>
+      </header>
+
+      <main class="battlefield">
+        <div class="fighter">
+          <div class="hand-slot" id="playerHand">
+            <i class="fa-solid fa-question hand-icon"></i>
+          </div>
+          <p class="fighter-tag">Sənin seçimin</p>
+        </div>
+
+        <div class="vs-column">
+          <span class="vs-text">VS</span>
+          <p class="result-text" id="resultText">Seçimini et</p>
+        </div>
+
+        <div class="fighter">
+          <div class="hand-slot" id="computerHand">
+            <i class="fa-solid fa-question hand-icon"></i>
+          </div>
+          <p class="fighter-tag">Komputer</p>
+        </div>
+      </main>
+
+      <section class="choices">
+        <button class="choice-btn" data-choice="rock" id="rockBtn">
+          <i class="fa-solid fa-hand-back-fist choice-icon"></i>
+          <span class="choice-name">Daş</span>
+        </button>
+        <button class="choice-btn" data-choice="paper" id="paperBtn">
+          <i class="fa-solid fa-hand choice-icon"></i>
+          <span class="choice-name">Kağız</span>
+        </button>
+        <button class="choice-btn" data-choice="scissors" id="scissorsBtn">
+          <i class="fa-solid fa-hand-scissors choice-icon"></i>
+          <span class="choice-name">Qayçı</span>
+        </button>
+      </section>
+
+      <button class="reset-btn" id="resetBtn">Yenidən başla</button>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
