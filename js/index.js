@@ -39,15 +39,15 @@ function checkWinner(userChoice, computerChoice) {
     (userChoice === "paper" && computerChoice === "rock") ||
     (userChoice === "scissors" && computerChoice === "paper")
   ) {
-    return "You win";
+    return "Qalibsən!!";
   } else if (
     (computerChoice === "rock" && userChoice === "scissors") ||
     (computerChoice === "paper" && userChoice === "rock") ||
     (computerChoice === "scissors" && userChoice === "paper")
   ) {
-    return "Computer win";
+    return "Kompüter qalibdir!";
   } else {
-    return "Draw";
+    return "Heç-heçə";
   }
 }
 
@@ -65,14 +65,14 @@ function playRound(userChoice) {
 playerHand.classList.remove("is-win", "is-lose", "is-draw");
 computerHand.classList.remove("is-win", "is-lose", "is-draw");
 
-  if (result == "You win") {
+  if (result == "Qalibsən!!") {
     //user qali b gelse playerScore 1 vahid artir ve ekrana yazdiriqiq
     playerScore++;
     playerScoreElement.textContent = playerScore;
 
     playerHand.classList.add("is-win"); //usere qalib
     computerHand.classList.add("is-lose") // komputere lose css elave olunur
-  } else if (result == "Computer win") {
+  } else if (result == "Kompüter qalibdir!") {
     computerScore++;
     computerScoreElement.textContent = computerScore;
     computerHand.classList.add("is-win")
